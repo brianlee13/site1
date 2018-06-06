@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  url:  <%= ENV['DATABASE_URL'] %>
+  pool: <%= ENV['DB_POOL'] || ENV['RAILS_MAX_THREADS'] || 5 %>
+
+development:
+  <<: *default
+  database: site_dev
+  username: site_dev
+  password: site_dev
+
+test:
+  <<: *default
+  database: site_test
+  username: site_test
+  password: site_test
+
+production:
+  <<: *default
+  database: site_prod
+  username: site_prod
+  password: site_prod
