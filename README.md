@@ -22,3 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+```
+psql
+> create role site_dev with password 'site_dev' login createdb;
+> \q
+createdb site_dev
+```
