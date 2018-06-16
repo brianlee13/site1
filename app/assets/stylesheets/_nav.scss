@@ -1,0 +1,8 @@
+nav#mainNav {
+  background-color: transparent;
+  border-color: rgba(255,255,255,0.3);
+
+  .nav > li > a, .navbar-header > a.navbar-brand {
+    color: white;
+  }
+}

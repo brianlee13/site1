@@ -20,3 +20,4 @@
 //= require jquery.fittext
 //= require wow.min
 //= require creative
+//= require timer

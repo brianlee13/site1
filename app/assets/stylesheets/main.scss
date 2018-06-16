@@ -10,5 +10,13 @@ article, aside, details, figcaption, figure, footer,
 header, hgroup, main, menu,nav, section, summary {
   display: block;
 }
+hr {
+  border-color: #F05F40;
+  border-width: 3px;
+  max-width: 50px;
+}
 
+@import 'nav';
 @import 'header';
+@import 'countdown';
+@import 'gallery';

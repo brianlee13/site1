@@ -1,0 +1,113 @@
+section#countdown {
+  background-color: #F05F40;
+
+  .logo.text-center {
+    margin: 15px 0 29px 0;
+  }
+  .timer {
+    position:absolute;
+    width:100%;
+    left:0;
+    top:0;
+    text-align:center;
+    z-index:99;
+  }
+  .timer-circle {
+    padding-top: 50px;
+  }
+  .timer-circle h1 {
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: rgb(234, 238, 236);
+    text-shadow: 2px 3px 3px #427B7A;
+    padding-bottom: 20px;
+  }
+  .logo h1 {
+    font-weight: 400;
+    font-family: 'Marck Script', cursive;
+    color: #E7F0FF;
+    font-size: 73px;
+  }
+  .circle {
+    width: 175px;
+    height: 175px;
+    line-height: 50px;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 5px white solid;
+    color: white;
+    background-color: transparent;
+    opacity: 0.6;
+  }
+  #spacer1 {
+    font-size: 35px;
+    padding-top: 35px;
+  }
+  #spacer2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 758px) and (min-width: 580px)
+{
+    .circle
+    {
+        width:130px;
+        height:130px;
+    }
+    #spacer1
+    {
+        font-size: 30px;
+        padding-top: 17px;
+    }
+    #spacer2
+    {
+        font-size: 30px;
+    }
+}
+@media (max-width: 579px) and (min-width: 400px)
+{
+    .carousel 
+    {
+        height: 750px;
+    }
+
+    .carousel .item 
+    {
+        height: 750px;
+    }
+    .carousel-inner > .item > img 
+    {
+        height: 750px;
+    }
+}
+@media all and (max-width: 399px)
+{
+    .timer-circle h1 
+    {
+        font-size: 30px;
+    }
+    .circle 
+    {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    #spacer1 
+    {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    #spacer2 
+    {
+        font-size: 25px;
+    }
+    .title 
+    {
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+}
