@@ -1,5 +1,17 @@
+$theme-primary: #F05F40;
+$theme-dark: #222;
+
+@import
+  'mixins',
+  'base',
+  'main/nav',
+  'main/header',
+  'main/countdown',
+  'main/gallery',
+  'main/location'
+;
+
 html, body {
-  font-family: 'Marck Script', cursive;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -15,8 +27,9 @@ hr {
   border-width: 3px;
   max-width: 50px;
 }
-
-@import 'nav';
-@import 'header';
-@import 'countdown';
-@import 'gallery';
+section {
+  padding: 100px 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Marck Script', cursive;
+}

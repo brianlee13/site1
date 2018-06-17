@@ -1,12 +1,11 @@
 doctype html
 html
   head
-    title Site
+    title Vern Hui & Jesslyn
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-
-    / = stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Marck+Script'
+    = favicon_link_tag 'favicon.ico'
 
   body#page-top onload="countdown('2018','10','21','19','0')"
     = yield

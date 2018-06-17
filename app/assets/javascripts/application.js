@@ -17,6 +17,7 @@
 //= require bootstrap-sprockets
 //= require bootstrap
 
+//= require cbpAnimatedHeader
 //= require jquery.fittext
 //= require wow.min
 //= require creative
