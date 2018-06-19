@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'application#index'
   # root 'main#index'
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth' }
+  resources :posts, only: [:index, :create, :destroy]
 end
