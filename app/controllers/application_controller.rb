@@ -2,7 +2,8 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
-    current_user
+    # current_user
+    @posts = Post.all
   end
 
   def hello
