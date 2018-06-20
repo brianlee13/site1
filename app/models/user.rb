@@ -1,5 +1,9 @@
 class User < ApplicationRecord
+  include Avatarable
+
   has_many :posts, dependent: :destroy
+  # has_one_attached :avatar, default_url: 'avatar.png'
+
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
@@ -15,5 +19,9 @@ class User < ApplicationRecord
       user.image = provider_data.info.image
       user.skip_confirmation!
     end
+  end
+
+  def avatar_text
+    email.chr
   end
 end

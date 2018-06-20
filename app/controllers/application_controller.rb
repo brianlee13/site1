@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   def index
     # current_user
-    @posts = Post.all
+    @posts = Post.last(3)
   end
 
   def hello

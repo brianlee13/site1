@@ -9,6 +9,29 @@ section#post
         hr.primary
   .container-fluid
     .row.no-gutter
+      .col-xs-6
+        .portfolio-box
+          img.img-responsive alt="" src=asset_url("portfolio/1.jpg")
+      .col-xs-6: .row.mx-0.no-gutter
+        .col-xs-12
+          - @posts.each_with_index do |post, index|
+            - if index % 2 == 0
+              .container-post.container-post-left
+                img alt="Avatar" src=user_avatar(post.user) style="width:100%;" /
+                p = post.content
+                span.time-right 11:00
+            - else
+              .container-post.container-post-right.darker
+                img.right alt="Avatar" src=user_avatar(post.user) style="width:100%;" /
+                p = post.content
+                span.time-left 11:01
+    .row
+      .col-lg-12.text-center
+        h3.section-heading Share Your Wish
+        / hr.primary
+
+  / .container-fluid
+    .row.no-gutter
       .col-xs-7
       	.portfolio-box
           img.img-responsive alt="" src=asset_url("portfolio/1.jpg")
