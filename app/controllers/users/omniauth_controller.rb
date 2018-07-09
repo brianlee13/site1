@@ -4,7 +4,7 @@ class Users::OmniauthController < ApplicationController
   def facebook
     @user = User.create_from_provider_data(request.env['omniauth.auth'])
     if @user.persisted?
-      sign_in_and_redirect @user
+      sign_in_and_redirect root_url
       # set_flash_message!(:notice, :success, kind: 'Facebook') if is_navigational_format?
       
       # redirect_to root_url
